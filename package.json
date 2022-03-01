@@ -1,20 +1,40 @@
 {
   "dependencies": {
+    "@wdio/cli": "^7.16.16",
+    "cypress": "^9.5.0",
     "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
     "md5": "^2.3.0",
+    "multer": "^1.4.4",
     "mysql2": "^2.3.3",
     "sequelize": "^6.16.2"
   },
   "name": "rental_mobil",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
+    "cypress:opem": "cypress open",
+    "test-e2e": "nightwatch",
     "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^98.0.1",
+    "selenium-server": "^3.141.59"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasmineeer/code-base-rentalcar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jasmineeer/code-base-rentalcar/issues"
+  },
+  "homepage": "https://github.com/jasmineeer/code-base-rentalcar#readme",
   "description": ""
 }
